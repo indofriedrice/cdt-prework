@@ -33,7 +33,7 @@ Ensure you have the following installed:
 ### Installation
 
 1. Clone the repository
-   - Terminal: git clone <repository-url>
+   - Terminal: git clone the repository url
 2. Obtain an API key
    - Register at TheCatAPI to obtain your API key.
 3. In the ctd-prework-node directory, create a .env file and add the API key to the .env file
