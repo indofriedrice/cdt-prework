@@ -12,10 +12,8 @@ This lightweight web application allows users to explore random cat photos along
 ---
 
 ## Technologies Used
-- HTML
-- CSS
-- JavaScript
-- TheCatAPI API
+- Client-Side: HTML, CSS, JavaScript
+- Server-Side: Node.JS, Express.JS, DotENV, TheCatAPI API
 
 ---
 
@@ -25,7 +23,7 @@ This lightweight web application allows users to explore random cat photos along
 Ensure you have the following installed:
 - A web browser (Chrome)
 - A text editor (VSCode)
-- Node.JS
+- Node.JS (Express.JS & DotENV)
 
 ### Installation
 1. Clone the repository

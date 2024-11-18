@@ -1,5 +1,14 @@
-const api_key =
-  "live_9qsDo06Vg5Pxaa604wIEVHs9aftnsHprdefdLvlwawfjpeXQJQDVTfIKRdW6P7k8";
+let api_key = "";
+
+async function getApiKey() {
+  try {
+    const response = await fetch("http://localhost:3000/get-api-key");
+    const data = await response.json();
+    api_key = data.api_key;
+  } catch (error) {
+    console.error("Error fetching API key:", error.message);
+  }
+}
 
 async function fetchBreedDetails() {
   try {
@@ -44,4 +53,11 @@ async function fetchBreedDetails() {
   }
 }
 
-fetchBreedDetails();
+(async () => {
+  try {
+    await getApiKey();
+    fetchBreedDetails();
+  } catch (error) {
+    console.error("Revise The Function Calls!", error.message);
+  }
+})();
